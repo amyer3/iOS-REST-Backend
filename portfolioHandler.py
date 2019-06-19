@@ -1,11 +1,11 @@
-from flask import abort, jsonify, json
-import dbHandler
-from sqlite3 import Error
-import time
-import string
 import random
-from dao import databaseAccessObject as dao
+import string
+import time
+from sqlite3 import Error
 
+from flask import json
+
+import databaseAccessObject as dao
 
 """
 portfolio (

@@ -1,9 +1,11 @@
-from flask import jsonify, abort, json
-import random, string
-import dbHandler
-from sqlite3 import Error
+import random
+import string
 import time
-from dao import databaseAccessObject as dao
+from sqlite3 import Error
+
+from flask import json
+
+import databaseAccessObject as dao
 
 
 def generate_id():

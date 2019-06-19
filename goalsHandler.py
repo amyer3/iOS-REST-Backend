@@ -1,10 +1,11 @@
-from flask import abort, jsonify, json
-from sqlite3 import Error
-import dbHandler
-import time
 import random
 import string
-import dao.databaseAccessObject as dao
+import time
+from sqlite3 import Error
+
+from flask import abort, json
+
+import databaseAccessObject as dao
 
 now = int(round(time.time() * 1000))
 d = dao.databaseAccess()

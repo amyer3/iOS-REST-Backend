@@ -1,7 +1,8 @@
-from flask import jsonify, json, abort
 from sqlite3 import Error
-from dao import databaseAccessObject as dao
 
+from flask import json
+
+import databaseAccessObject as dao
 
 d = dao.databaseAccess()
 
