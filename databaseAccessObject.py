@@ -5,7 +5,6 @@ import os
 
 class databaseAccess:
     def __init__(self):
-        super()
         if not os.path.isfile(os.getcwd() + '/data.db'):
             self.connect_and_make_table()
 
