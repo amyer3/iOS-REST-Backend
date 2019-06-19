@@ -6,60 +6,6 @@ import random
 import string
 import dao.databaseAccessObject as dao
 
-goals = [
-    {
-        "name": "Margin of Saftey",
-        "price": 5000,
-        "added_funds": 1300,
-        "logo": "bandaid"
-    },
-    {
-        "name": "Birthday",
-        "price": 100,
-        "added_funds": 55,
-        "logo": "calendar"
-    },
-    {
-        "name": "Car",
-        "price": 2000,
-        "added_funds": 1500,
-        "logo": "car"
-    },
-    {
-        "name": "Vacation",
-        "price": 3700,
-        "added_funds": 600,
-        "logo": "sunbed"
-    },
-    {
-        "name": "School",
-        "price": 2500,
-        "added_funds": 1000,
-        "logo": "study"
-    }
-]
-
-sql_create_goals_table = """CREATE TABLE IF NOT EXISTS goals (
-                                name text NOT NULL,
-                                price integer,
-                                added_funds real NOT NULL,
-                                logo text NOT NULL,
-                                goal_id integer NOT NULL,
-                                date_started int NOT NULL,
-                                proj_completion int NOT NULL,
-                                date_close real NOT NULL,
-                                user_id integer NOT NULL,
-                                completed integer NOT NULL,
-                                closed integer NOT NULL,
-                                FOREIGN KEY (user_id) REFERENCES users(id)
-                            );"""
-sql_create_goal_log = """CREATE TABLE IF NOT EXISTS goal_log(
-                        goal_id integer NOT NULL, 
-                        date int NOT NULL,
-                        added_funds NOT NULL,
-                        FOREIGN KEY (goal_id) REFERENCES goals(goal_id)
-                        );
-                        """
 now = int(round(time.time() * 1000))
 d = dao.databaseAccess()
 
