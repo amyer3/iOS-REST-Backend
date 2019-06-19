@@ -1,0 +1,54 @@
+{
+    "portfolio": {
+        "stocks": [
+            {
+                "name": "Google",
+                "ticker": "GOOG",
+                "num_stocks": 8,
+                "opening": 191,
+                "closing": 233.11,
+                "cost": 2133,
+                "pct": 15
+            },
+            {
+                "name": "Apple",
+                "ticker": "AAPL",
+                "num_stocks": 4,
+                "opening": 121,
+                "closing": 130,
+                "cost": 100,
+                "pct": 35
+            },
+            {
+                "name": "Facebook",
+                "ticker": "FB",
+                "num_stocks": 1,
+                "opening": 223.99,
+                "closing": 223.99,
+                "cost": 220.81,
+                "pct": 5
+            },
+            {
+                "name": "Twitter",
+                "ticker": "TWTR",
+                "num_stocks": 16,
+                "opening": 16,
+                "closing": 16.42,
+                "cost": 14.55,
+                "pct": 45
+            },
+            {
+                "name": "Apple",
+                "ticker": "AAPL",
+                "num_stocks": 4,
+                "opening": 121,
+                "closing": 130,
+                "cost": 100,
+                "pct": 25
+            }
+        ],
+        "return_today": 1.29,
+        "lifetime_return": 22.19,
+        "investable_cash": 37.19
+    }
+}
