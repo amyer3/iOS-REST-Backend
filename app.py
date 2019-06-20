@@ -1,11 +1,6 @@
 #!flask/bin/python
-from flask import Flask, jsonify, abort, request
-import articleHandler
-import nonprofitHandler
-import portfolioHandler
-import goalsHandler
-import userHandler
-import sqlite3
+from flask import Flask, request
+import articleHandler, nonprofitHandler, portfolioHandler, goalsHandler, userHandler
 
 
 app = Flask(__name__)
